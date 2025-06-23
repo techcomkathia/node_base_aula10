@@ -101,13 +101,6 @@ npm install
 npm run dev
 ```
 
----
-
-## 📦 Extras (se quiser ir além)
-
-- Validar os dados com alguma biblioteca como `Joi` ou `express-validator`.
-- Adicionar autenticação com JWT.
-- Criar testes com Jest ou Supertest.
 
 ---
 
