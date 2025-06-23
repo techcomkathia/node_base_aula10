@@ -24,6 +24,8 @@ livraria-api/
 │   └── (Usuário, Livro, Autor, etc.)
 ├── services/
 │   └── (funções para buscar, criar, atualizar e deletar registros)
+├── middleware/
+│   └── (VAMOS CRIAR. Validação de dados de entrada, autenticação para rotas protegidas)
 ├── controllers/
 │   └── (Você vai criar!)
 ├── routes/
@@ -49,7 +51,7 @@ livraria-api/
 
 ### ✅ 1. Criar os **controllers** para cada entidade
 
-Crie um controller para cada model com funções básicas:
+Crie um controller para o model categorias com funções básicas:
 
 - `create`
 - `findAll`
@@ -60,8 +62,7 @@ Crie um controller para cada model com funções básicas:
 Exemplo de nome de arquivo:
 
 ```
-controllers/usuarioController.js
-controllers/livroController.js
+controllers/categoriasControllers.js
 ```
 
 ### ✅ 2. Criar os **arquivos de rotas** Express
@@ -69,8 +70,7 @@ controllers/livroController.js
 Cada rota deve mapear os endpoints REST da entidade correspondente:
 
 ```
-routes/usuarios.js
-routes/livros.js
+routes/categorias.js
 ```
 
 #### Exemplos de rotas:
@@ -94,16 +94,8 @@ npm install
 
 2. Crie o banco de dados executando o `banco.sql` no MySQL.
 
-3. Configure o arquivo `.env` com seus dados do banco:
 
-```
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=sua_senha
-DB_NAME=livrariaLive05
-```
-
-4. Inicie o projeto:
+3. Inicie o projeto:
 
 ```
 npm run dev
